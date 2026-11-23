@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um espaço para guardar redações, lembranças da escola e memórias de infância.">
+  <title>Entre Linhas &amp; Memórias</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">✳</span> entre linhas <span>& memórias</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio" class="nav-link active" data-page="inicio">Início</a>
+      <a href="#redacoes" class="nav-link" data-page="redacoes">Redações</a>
+      <a href="#memorias" class="nav-link" data-page="memorias">Memórias</a>
+      <a href="#galeria" class="nav-link" data-page="galeria">Galeria</a>
+      <a href="#sobre" class="nav-link" data-page="sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page active-page" id="inicio">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">UM ARQUIVO DE MOMENTOS</p>
+          <h1>Algumas histórias<br>merecem <em>ficar.</em></h1>
+          <p class="hero-text">Entre redações, descobertas e lembranças da infância, este é um cantinho para reunir partes da minha história.</p>
+          <a class="primary-btn" href="#redacoes">Explorar minhas lembranças <span>↗</span></a>
+        </div>
+        <div class="hero-art">
+          <div class="photo-frame hero-photo">
+            <img src="images/foto-destaque.jpg" alt="Adicione aqui uma foto especial" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+            <span class="photo-placeholder">Sua foto favorita<br>entra aqui</span>
+            <span class="tape"></span>
+          </div>
+          <span class="scribble">capítulos<br>da vida ✎</span>
+          <span class="little-star">✳</span>
+        </div>
+      </div>
+      <div class="welcome-strip">
+        <span>✦</span>
+        <p>Não é só sobre o que foi escrito. É sobre tudo o que aconteceu enquanto eu aprendia a escrever minha própria história.</p>
+      </div>
+      <div class="section-heading">
+        <div><p class="eyebrow">COMECE POR AQUI</p><h2>Um pouco de cada capítulo</h2></div>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card peach" href="#redacoes"><span class="card-icon">✍</span><span class="card-kicker">01 / ESCRITA</span><h3>Minhas redações</h3><p>Textos, temas, ideias e a evolução ao longo do tempo.</p><span class="card-arrow">↗</span></a>
+        <a class="feature-card lilac" href="#memorias"><span class="card-icon">⌁</span><span class="card-kicker">02 / LEMBRANÇAS</span><h3>Memórias</h3><p>Momentos da escola e histórias que continuam comigo.</p><span class="card-arrow">↗</span></a>
+        <a class="feature-card sage" href="#galeria"><span class="card-icon">▧</span><span class="card-kicker">03 / FOTOGRAFIAS</span><h3>Galeria</h3><p>Pequenos registros de fases, pessoas e lugares especiais.</p><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="page" id="redacoes">
+      <div class="page-intro">
+        <p class="eyebrow">01 / MINHA TRAJETÓRIA NA ESCRITA</p>
+        <h1>Redações <em>e ideias.</em></h1>
+        <p>Textos que marcaram meu aprendizado. Cada redação guarda um tema, uma tentativa e alguma coisa que aprendi.</p>
+      </div>
+      <div class="essay-browser">
+        <div class="essay-list-heading">
+          <p class="eyebrow">ARQUIVO DE TEXTOS</p>
+          <p>Selecione uma redação para ler. As 17 produções estão organizadas individualmente.</p>
+        </div>
+        <div class="tabs" id="essayTabs" role="tablist" aria-label="Lista de redações"></div>
+        <div id="essayPanels" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="page" id="memorias">
+      <div class="page-intro">
+        <p class="eyebrow">02 / COISAS QUE O TEMPO NÃO APAGA</p>
+        <h1>Memórias <em>de outros tempos.</em></h1>
+        <p>Nem tudo cabe em uma redação. Algumas lembranças merecem ser contadas do jeito que a gente lembra.</p>
+      </div>
+      <div class="memory-list">
+        <article class="memory-card"><div class="memory-number">01</div><div><p class="card-kicker">INFÂNCIA · DATA APROXIMADA</p><h2>Uma lembrança de criança</h2><p>Conte aqui uma memória da sua infância: uma brincadeira, um passeio, uma pessoa importante ou algo simples que ficou marcado.</p></div><div class="memory-photo"><img src="images/memoria-1.jpg" alt="Foto de uma lembrança de infância" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"></div></article>
+        <article class="memory-card"><div class="memory-number">02</div><div><p class="card-kicker">VIDA ESCOLAR · DATA APROXIMADA</p><h2>Um dia especial na escola</h2><p>Registre uma apresentação, uma amizade, uma aula diferente ou um acontecimento que você ainda recorda.</p></div><div class="memory-photo"><img src="images/memoria-2.jpg" alt="Foto de um momento escolar" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"></div></article>
+        <article class="memory-card"><div class="memory-number">03</div><div><p class="card-kicker">PESSOAS · DATA APROXIMADA</p><h2>Amigos para a vida toda</h2><p>Algumas amizades se tornam parte da nossa história para sempre. Entre risadas, momentos simples e lembranças compartilhadas, ficam laços que o tempo não apaga.</p></div><div class="memory-photo"><video controls playsinline preload="metadata" aria-label="Vídeo da terceira memória"><source src="videos/memoria-3.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video></div></article>
+      </div>
+    </section>
+
+    <section class="page" id="galeria">
+      <div class="page-intro">
+        <p class="eyebrow">03 / REGISTROS</p>
+        <h1>Galeria de <em>momentos.</em></h1>
+        <p>Fotografias que ajudam a contar aquilo que as palavras nem sempre conseguem explicar.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item tall"><img src="images/galeria-1.jpg" alt="Foto da galeria 1" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"><figcaption>Uma fase especial <span>01</span></figcaption></figure>
+        <figure class="gallery-item"><img src="images/galeria-2.jpg" alt="Foto da galeria 2" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"><figcaption>Um dia para lembrar <span>02</span></figcaption></figure>
+        <figure class="gallery-item"><img src="images/galeria-3.jpg" alt="Foto da galeria 3" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"><figcaption>Pequenos detalhes <span>03</span></figcaption></figure>
+        <figure class="gallery-item wide"><img src="images/galeria-4.jpg" alt="Foto da galeria 4" onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')"><figcaption>Histórias que continuam <span>04</span></figcaption></figure>
+      </div>
+      <p class="small-note">As imagens são exemplos de espaço reservado. Coloque suas fotos na pasta <code>images</code> usando os mesmos nomes.</p>
+    </section>
+
+    <section class="page" id="sobre">
+      <div class="page-intro">
+        <p class="eyebrow">04 / SOBRE ESTE PROJETO</p>
+        <h1>Um arquivo feito <em>de lembranças.</em></h1>
+      </div>
+      <div class="about-layout">
+        <div class="about-stamp">MINHA<br>HISTÓRIA<br>✳</div>
+        <div><h2>Mais do que guardar trabalhos.</h2><p>Este site reúne parte da minha trajetória escolar e algumas lembranças de quando eu era criança. As redações mostram como minhas ideias e minha escrita foram mudando; as memórias mostram as experiências, pessoas e momentos que fizeram parte do caminho.</p><p>A ideia é olhar para trás, reconhecer o que já vivi e guardar tudo isso de um jeito especial.</p><p class="signature">Com carinho, <span>— [Seu nome]</span></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>ENTRE LINHAS & MEMÓRIAS</span><span>Feito para guardar o que importa ✳</span><a href="#inicio">Voltar ao início ↑</a></footer>
+  <script src="./redacoes.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

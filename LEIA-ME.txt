@@ -1,0 +1,23 @@
+ENTRE LINHAS & MEMÓRIAS — VERSÃO CORRIGIDA
+
+ARQUIVOS
+- index.html: estrutura do site.
+- style.css: visual original, com ajustes responsivos das abas.
+- script.js: navegação, menu para celular e funcionamento das abas.
+- redacoes.js: conteúdo das 17 redações.
+- images/: pasta para fotografias.
+
+COMO PUBLICAR NO GITHUB PAGES
+1. Extraia este ZIP.
+2. Abra o repositório GitHub do site.
+3. Envie os arquivos index.html, style.css, script.js e redacoes.js para a raiz do repositório (mesma pasta).
+4. Envie também a pasta images, se tiver fotos.
+5. Se o GitHub perguntar, confirme a substituição dos arquivos.
+6. Aguarde alguns minutos e atualize o site com Ctrl + F5.
+
+IMPORTANTE
+- Não renomeie os quatro arquivos principais.
+- Os nomes diferenciam maiúsculas e minúsculas no GitHub Pages.
+- O index.html carrega redacoes.js antes de script.js. Mantenha essa ordem.
+- As 17 redações são carregadas automaticamente nas abas.
+- As fotos são opcionais; o site funciona mesmo sem elas.
